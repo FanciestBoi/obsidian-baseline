@@ -124,7 +124,7 @@
       overflow: visible;
 
       .callout-title:not(:only-child) {
-        transform: translateY(-1.75rem);
+        transform: translateY(-1.75em);
         width: fit-content;
         padding: 0 8px;
         background-color: var(--background-primary);
@@ -137,7 +137,7 @@
       }
 
       .callout-content > *:first-child {
-        margin-top: -1rem;
+        margin-top: -1em;
       }
     }
 

@@ -1568,7 +1568,7 @@ settings:
 		id: p-spacing
 		title: Paragraph spacing
 		type: variable-text
-		default: 1.25rem
+		default: 1.25em
 	-
 		id: focus-view
 		title: Focus view
@@ -1640,7 +1640,7 @@ settings:
 		id: line-width-wide
 		title: Wide line width
 		type: variable-text
-		default: 50rem
+		default: 50em
 	-
 		id: table-block-width
 		title: Table block width
@@ -1718,7 +1718,7 @@ settings:
 		id: inline-title-size
 		title: Inline title font size
 		type: variable-text
-		default: 1.5rem
+		default: 1.5em
 	-
 		id: inline-title-align
 		title: Inline title alignment
@@ -1824,7 +1824,7 @@ settings:
 		title: Heading spacing
 		description: Adjust space between headings and paragraphs.
 		type: variable-text
-		default: 2.5rem
+		default: 2.5em
 	-
 		id: colorful-headings
 		title: Colorful headings
@@ -1886,7 +1886,7 @@ settings:
 		id: h1-size
 		title: H1 font size
 		type: variable-text
-		default: 1.5rem
+		default: 1.5em
 	-
 		id: h1-weight
 		title: H1 font weight
@@ -1982,7 +1982,7 @@ settings:
 		id: h2-size
 		title: H2 font size
 		type: variable-text
-		default: 1.25rem
+		default: 1.25em
 	-
 		id: h2-weight
 		title: H2 font weight
@@ -2078,7 +2078,7 @@ settings:
 		id: h3-size
 		title: H3 font size
 		type: variable-text
-		default: 1rem
+		default: 1em
 	-
 		id: h3-weight
 		title: H3 font weight
@@ -2174,7 +2174,7 @@ settings:
 		id: h4-size
 		title: H4 font size
 		type: variable-text
-		default: 1rem
+		default: 1em
 	-
 		id: h4-weight
 		title: H4 font weight
@@ -2271,7 +2271,7 @@ settings:
 		id: h5-size
 		title: H5 font size
 		type: variable-text
-		default: 0.9375rem
+		default: 0.9375em
 	-
 		id: h5-weight
 		title: H5 font weight
@@ -2367,7 +2367,7 @@ settings:
 		id: h6-size
 		title: H6 font size
 		type: variable-text
-		default: 0.9375rem
+		default: 0.9375em
 	-
 		id: h6-weight
 		title: H6 font weight
@@ -2492,13 +2492,13 @@ settings:
 		title: Dashed line size
 		type: variable-text
 		allowEmpty: false
-		default: 1rem
+		default: 16px
 	- 
 		id: hr-dashed-spacing
 		title: Dashed line spacing
 		type: variable-text
 		allowEmpty: false
-		default: 0.5rem
+		default: 8px
 	-
 		id: banner
 		title: Banner
@@ -2514,7 +2514,7 @@ settings:
 		title: Banner icon size
 		type: variable-text
 		allowEmpty: false
-		default: 3rem
+		default: 3em
 	- 
 		id: banner-image-height
 		title: Banner image height
@@ -2645,7 +2645,7 @@ settings:
 		id: blockquote-size
 		title: Blockquote font size
 		type: variable-text
-		default: 1rem
+		default: 1em
 	-
 		id: blockquote-font-style
 		title: Blockquote font style
@@ -2753,7 +2753,7 @@ settings:
 		id: callout-size
 		title: Callout font size
 		type: variable-text
-		default: 1rem
+		default: 1em
 	-
 		id: callout-lucide
 		title: Disable custom icons
@@ -2956,7 +2956,7 @@ settings:
         id: list-spacing
         title: List spacing
         type: variable-text
-        default: 0.175rem
+        default: 0.175em
     -
         id: list-numbered-style
         title: List order style
@@ -3131,7 +3131,7 @@ settings:
 		id: table-text-size
 		title: Table font size
 		type: variable-text
-		default: 0.933rem
+		default: 0.933em
 	-
 		id: table-width
 		title: Table width

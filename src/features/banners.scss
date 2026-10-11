@@ -7,7 +7,7 @@ body:not(.banner-off) {
   --banner-image-height-s: 240px;
   --banner-image-radius: var(--radius-s);
   --banner-fade-height: 80px;
-  --banner-icon-size: 3rem;
+  --banner-icon-size: 3em;
   --banner-mobile-offset: 0px;
 
   &:where(.is-mobile) {
@@ -15,7 +15,7 @@ body:not(.banner-off) {
   }
   &:where(.is-mobile) .banner,
   &:where(.is-mobile) .banner-icon {
-    --banner-mobile-offset: 1.5rem;
+    --banner-mobile-offset: 1.5em;
   }
 
   &:not(.is-mobile):not(.show-view-header) {
@@ -150,7 +150,7 @@ body:not(.banner-off) {
       .callout[data-callout="banner-icon"] {
         z-index: 1;
         position: absolute;
-        top: calc(var(--view-top-spacing-markdown) + var(--banner-image-height) - var(--banner-fade-height) + 1rem);
+        top: calc(var(--view-top-spacing-markdown) + var(--banner-image-height) - var(--banner-fade-height) + 1em);
         margin: 0 !important;
         border: none !important;
         background: none !important;
@@ -177,7 +177,7 @@ body:not(.banner-off) {
     // Banner title
     @keyframes bannerTitleEditIn {
       from {
-        transform: translateY(-0.5rem);
+        transform: translateY(-0.5em);
         opacity: 0;
       }
       to {
@@ -187,7 +187,7 @@ body:not(.banner-off) {
     }
     @keyframes bannerTitleEditOut {
       from {
-        transform: translateY(0.5rem);
+        transform: translateY(0.5em);
         opacity: 0;
       }
       to {
@@ -207,13 +207,13 @@ body:not(.banner-off) {
       &:not(:focus-within) {
         position: absolute;
         z-index: 1;
-        top: calc(var(--view-top-spacing-markdown) + var(--banner-image-height) - var(--banner-fade-height) + 1rem);
+        top: calc(var(--view-top-spacing-markdown) + var(--banner-image-height) - var(--banner-fade-height) + 1em);
         align-items: center;
         animation: bannerTitleEditOut var(--anim-duration-moderate) var(--anim-motion-baseline) forwards;
         margin-bottom: 0;
-        margin-left: calc(var(--banner-icon-size) + 1rem);
-        width: calc(var(--file-line-width) - var(--banner-icon-size) - 1rem);
-        max-width: calc(100% - var(--file-margins-x) * 2 - var(--banner-icon-size) - 1rem);
+        margin-left: calc(var(--banner-icon-size) + 1em);
+        width: calc(var(--file-line-width) - var(--banner-icon-size) - 1em);
+        max-width: calc(100% - var(--file-margins-x) * 2 - var(--banner-icon-size) - 1em);
         height: var(--banner-icon-size);
         overflow: hidden;
         line-height: var(--banner-icon-size);
