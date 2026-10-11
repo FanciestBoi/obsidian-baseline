@@ -2500,6 +2500,16 @@ settings:
 		allowEmpty: false
 		default: 8px
 	-
+		id: highlight
+		title: Highlight
+		type: heading
+		level: 2
+		collapsed: true
+	-
+		id: highlight-radius-off
+		title: Disable rounded highlight
+		type: class-toggle
+	-
 		id: banner
 		title: Banner
 		type: heading
