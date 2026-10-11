@@ -561,8 +561,8 @@ settings:
 		default-light: '#'
 		default-dark: '#'
 	-
-		id: text-normal-editor
-		title: Primary text (Editor)
+		id: text-editor
+		title: Editor text
 		type: variable-themed-color
 		format: hex
 		default-light: '#'
@@ -1404,7 +1404,7 @@ settings:
 		id: titlebar-text-weight
 		title: Frame title font weight
 		type: variable-number-slider
-		default: 600
+		default: 500
 		min: 100
 		max: 900
 		step: 50
@@ -1736,7 +1736,7 @@ settings:
 		id: inline-title-weight
 		title: Inline title font weight
 		type: variable-number-slider
-		default: 600
+		default: 500
 		min: 100
 		max: 900
 		step: 50
@@ -2179,7 +2179,7 @@ settings:
 		id: h4-weight
 		title: H4 font weight
 		type: variable-number-slider
-		default: 600
+		default: 500
 		min: 100
 		max: 900
 		step: 50
@@ -2372,7 +2372,7 @@ settings:
 		id: h6-weight
 		title: H6 font weight
 		type: variable-number-slider
-		default: 600
+		default: 500
 		min: 100
 		max: 900
 		step: 50

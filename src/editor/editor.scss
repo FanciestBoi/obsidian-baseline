@@ -11,10 +11,14 @@
     --list-spacing: 0.175em;
     --inline-title-margin-bottom: 1em;
 
-    --inline-title-color: inherit;
+    --inline-title-color: var(--text-strong);
     --inline-title-size: 1.5em;
-    --inline-title-weight: var(--font-semibold);
+    --inline-title-weight: var(--font-medium);
     --inline-title-line-height: var(--line-height-tight);
+
+    --text-strong: color-mix(in srgb, var(--mono-100) 50%, var(--text-editor, var(--text-normal)));
+    --bold-color: var(--text-strong);
+    --italic-color: var(--text-strong);
 
     --h1-size: 1.5em;
     --h2-size: 1.25em;
@@ -26,12 +30,9 @@
     --h1-weight: var(--font-medium);
     --h2-weight: var(--font-medium);
     --h3-weight: var(--font-medium);
-    --h4-weight: var(--font-semibold);
+    --h4-weight: var(--font-medium);
     --h5-weight: var(--font-medium);
-    --h6-weight: var(--font-semibold);
-
-    --h4-color: var(--text-muted);
-    --h6-color: var(--text-muted);
+    --h6-weight: var(--font-medium);
 
     --h1-line-height: var(--line-height-normal);
     --h2-line-height: var(--line-height-normal);
@@ -93,7 +94,7 @@
 
   .markdown-preview-view,
   .markdown-source-view {
-    color: var(--text-normal-editor, var(--text-normal));
+    color: var(--text-editor, var(--text-normal));
   }
 
   // Spacing
@@ -310,36 +311,42 @@
   .markdown-rendered h1,
   .HyperMD-header-1,
   .HyperMD-list-line .cm-header-1 {
+    color: var(--h1-color, var(--text-strong));
     text-transform: var(--h1-transform);
     text-align: var(--h1-align);
   }
   .markdown-rendered h2,
   .HyperMD-header-2,
   .HyperMD-list-line .cm-header-2 {
+    color: var(--h2-color, var(--text-strong));
     text-transform: var(--h2-transform);
     text-align: var(--h2-align);
   }
   .markdown-rendered h3,
   .HyperMD-header-3,
   .HyperMD-list-line .cm-header-3 {
+    color: var(--h3-color, var(--text-strong));
     text-transform: var(--h3-transform);
     text-align: var(--h3-align);
   }
   .markdown-rendered h4,
   .HyperMD-header-4,
   .HyperMD-list-line .cm-header-4 {
+    color: var(--h4-color, var(--text-muted));
     text-transform: var(--h4-transform);
     text-align: var(--h4-align);
   }
   .markdown-rendered h5,
   .HyperMD-header-5,
   .HyperMD-list-line .cm-header-5 {
+    color: var(--h5-color, var(--text-normal));
     text-transform: var(--h5-transform);
     text-align: var(--h5-align);
   }
   .markdown-rendered h6,
   .HyperMD-header-6,
   .HyperMD-list-line .cm-header-6 {
+    color: var(--h6-color, var(--text-muted));
     text-transform: var(--h6-transform);
     text-align: var(--h6-align);
   }
