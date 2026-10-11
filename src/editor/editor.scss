@@ -352,17 +352,17 @@
   }
 
   // Underline headings
-  .h1-l .markdown-reading-view h1,
+  .h1-l .markdown-rendered h1,
   .h1-l .markdown-source-view .HyperMD-header-1,
-  .h2-l .markdown-reading-view h2,
+  .h2-l .markdown-rendered h2,
   .h2-l .markdown-source-view .HyperMD-header-2,
-  .h3-l .markdown-reading-view h3,
+  .h3-l .markdown-rendered h3,
   .h3-l .markdown-source-view .HyperMD-header-3,
-  .h4-l .markdown-reading-view h4,
+  .h4-l .markdown-rendered h4,
   .h4-l .markdown-source-view .HyperMD-header-4,
-  .h5-l .markdown-reading-view h5,
+  .h5-l .markdown-rendered h5,
   .h5-l .markdown-source-view .HyperMD-header-5,
-  .h6-l .markdown-reading-view h6,
+  .h6-l .markdown-rendered h6,
   .h6-l .markdown-source-view .HyperMD-header-6 {
     border-bottom: var(--divider-width) solid var(--background-modifier-border);
     padding-bottom: var(--p-spacing);
@@ -388,9 +388,9 @@
     );
   }
 
-  // Highlights
-  .markdown-source-view mark,
+  // Highlight
   .markdown-rendered mark,
+  .markdown-source-view mark,
   .cm-s-obsidian span.cm-highlight,
   .cm-s-obsidian span.cm-highlight-color-widget {
     box-decoration-break: clone;
@@ -399,8 +399,8 @@
   }
 
   body:not(.highlight-radius-off) {
-    .markdown-source-view mark,
-    .markdown-rendered mark {
+    .markdown-rendered mark,
+    .markdown-source-view mark {
       border-radius: var(--radius-s);
       padding-inline: 4px;
     }

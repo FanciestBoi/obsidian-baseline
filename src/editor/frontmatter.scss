@@ -84,14 +84,14 @@
     display: none;
   }
 
-  body.metadata-add-property-hover .markdown-reading-view .metadata-container:not(:hover) .text-icon-button {
+  body.metadata-add-property-hover .markdown-rendered .metadata-container:not(:hover) .text-icon-button {
     opacity: 0;
     height: 0;
     padding-block: 0px;
     margin-block: 0px;
     display: flex;
   }
-  body.metadata-add-property-hidden .markdown-reading-view .metadata-add-button {
+  body.metadata-add-property-hidden .markdown-rendered .metadata-add-button {
     display: none;
   }
 
