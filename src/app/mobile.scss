@@ -73,7 +73,7 @@ body.is-mobile {
     .mobile-navbar {
       background-color: color-mix(in srgb, var(--background-secondary) var(--blur-opacity-m), transparent) !important;
       backdrop-filter: var(--blur-m);
-      border: var(--border-width) solid var(--background-modifier-hover);
+      box-shadow: var(--raised-shadow);
     }
   }
   &.is-tablet .mod-raised::after {
@@ -477,7 +477,7 @@ body.is-phone {
     height: var(--touch-size-l);
     background-color: color-mix(in srgb, var(--background-secondary) var(--blur-opacity-m), transparent);
     backdrop-filter: var(--blur-m);
-    border: var(--border-width) solid var(--background-modifier-hover);
+    box-shadow: var(--raised-shadow);
   }
   &.mod-toolbar-open:not(.mode-switcher-off) .mod-root .workspace-leaf-content[data-type="markdown"] .view-actions button:nth-last-child(2) {
     width: var(--touch-size-m);
