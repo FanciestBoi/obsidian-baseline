@@ -95,6 +95,12 @@ body:not(.is-mobile).hover-sidedock {
   &.tab-top-left-stacked.mod-macos.is-hidden-frameless .mod-sidedock.mod-left-split .mod-top-left-space .workspace-tab-header-container {
     transition: 0s;
   }
+
+  // Windows & Linux fix
+  &.tab-top-left-stacked:not(.mod-macos) .mod-sidedock.mod-left-split .mod-top-left-space .workspace-tab-header-container-inner {
+    margin-top: 8px !important;
+    margin-right: 0;
+  }
 }
 
 // Hover ribbon
