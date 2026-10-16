@@ -77,6 +77,9 @@ body:not(.is-phone) .workspace .mod-root {
     margin-bottom: 8px;
     height: auto;
   }
+  .workspace-tab-header-inner::after {
+    content: none;
+  }
   .workspace-tab-header-inner-title {
     line-height: normal;
     text-align: var(--tab-text-align);
@@ -332,32 +335,6 @@ body:not(.is-phone):is(.tab-underline, .tab-underline-accented) {
 }
 body:not(.is-phone).tab-underline-accented .workspace .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active {
   border-color: var(--color-accent);
-}
-
-// Editor panel: Tab divider
-body:not(.tab-divider):not(.is-phone) .mod-root .workspace-tabs:not(.mod-stacked),
-body.tab-divider:is(.tab-floating, .tab-floating-center):not(.is-phone) .mod-root .workspace-tabs:not(.mod-stacked) {
-  .workspace-tab-header-inner::after {
-    content: none;
-  }
-}
-body.tab-divider.tab-default:not(.is-phone) .mod-root .workspace-tabs:not(.mod-stacked) {
-  .workspace-tab-header:has(+ .workspace-tab-header.is-active) .workspace-tab-header-inner::after,
-  .workspace-tab-header:last-child .workspace-tab-header-inner::after {
-    content: none;
-  }
-  .workspace-tab-header-inner::after {
-    inset-inline-end: -5px;
-    width: 2px;
-  }
-}
-body.tab-divider:is(.tab-underline, .tab-underline-accented):not(.is-phone) .mod-root .workspace-tabs:not(.mod-stacked) {
-  .workspace-tab-header:last-child .workspace-tab-header-inner::after {
-    content: none;
-  }
-  .workspace-tab-header.is-active .workspace-tab-header-inner::after {
-    opacity: 1;
-  }
 }
 
 // Editor panel: Full width
