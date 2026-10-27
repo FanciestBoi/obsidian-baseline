@@ -12,10 +12,6 @@ body.input-cupertino {
   --interactive-normal: hsl(from var(--mono-100) h s l / 5%);
   --interactive-hover: hsl(from var(--mono-100) h s l / 5%);
 
-  --blur-radius-s: 2px;
-  --blur-radius-m: 4px;
-  --blur-radius-l: 8px;
-
   --raised-mask: linear-gradient(#ffffffbf, #ffffffbf) padding-box, linear-gradient(white, white) border-box;
   --raised-mask-border-width: 0px !important;
   --raised-mask-background: linear-gradient(transparent, white 35%, white 65%, transparent);
@@ -63,6 +59,10 @@ body.input-cupertino {
   &:not(.is-mobile) {
     --tab-action-width: 36px;
 
+    --blur-radius-s: 6px;
+    --blur-radius-m: 10px;
+    --blur-radius-l: 14px;
+
     &.theme-light {
       --shadow-extra: inset 0 0 0 0.5pt hsl(0 0% 100% / 0.25);
     }
@@ -74,6 +74,10 @@ body.input-cupertino {
   &.is-mobile {
     --titlebar-background: transparent;
     --titlebar-background-focused: transparent;
+
+    --blur-radius-s: 2px;
+    --blur-radius-m: 4px;
+    --blur-radius-l: 8px;
 
     --radius-s: calc(16px * var(--radius-modifier));
     --radius-m: calc(24px * var(--radius-modifier));
@@ -303,5 +307,22 @@ body.input-cupertino {
     .workspace-tab-header-container:not(:hover)
     .workspace-tab-header-container-inner {
     gap: calc(8px * var(--density-modifier));
+  }
+
+  // Graph view
+  .graph-controls {
+    top: 8px;
+    inset-inline-end: 8px;
+    padding: 0;
+    backdrop-filter: var(--blur-m);
+    background: var(--raised-background);
+    box-shadow: var(--raised-shadow);
+
+    &.is-close {
+      border-radius: var(--clickable-icon-radius);
+    }
+  }
+  .graph-controls-button {
+    margin-top: 0;
   }
 }
