@@ -95,6 +95,9 @@
   .markdown-source-view {
     color: var(--text-editor, var(--text-normal));
   }
+  .markdown-source-view:not(.is-live-preview) {
+    --p-spacing-empty: 0;
+  }
 
   // Spacing
   .markdown-rendered h1 + :not(hr),
@@ -103,14 +106,19 @@
   .markdown-rendered h4 + :not(hr, h1, h2, h3),
   .markdown-rendered h5 + :not(hr, h1, h2, h3, h4),
   .markdown-rendered h6 + :not(hr, h1, h2, h3, h4, h5),
-  .markdown-rendered div.el-h1 + div > :not(hr),
-  .markdown-rendered div.el-h2 + div > :not(hr, h1),
-  .markdown-rendered div.el-h3 + div > :not(hr, h1, h2),
-  .markdown-rendered div.el-h4 + div > :not(hr, h1, h2, h3),
-  .markdown-rendered div.el-h5 + div > :not(hr, h1, h2, h3, h4),
-  .markdown-rendered div.el-h6 + div > :not(hr, h1, h2, h3, h4, h5),
-  .markdown-rendered div.el-p + div:is(.el-ul, .el-ol) > * {
+  .markdown-rendered .el-h1 + div > :not(hr),
+  .markdown-rendered .el-h2 + div > :not(hr, h1),
+  .markdown-rendered .el-h3 + div > :not(hr, h1, h2),
+  .markdown-rendered .el-h4 + div > :not(hr, h1, h2, h3),
+  .markdown-rendered .el-h5 + div > :not(hr, h1, h2, h3, h4),
+  .markdown-rendered .el-h6 + div > :not(hr, h1, h2, h3, h4, h5),
+  .markdown-rendered .el-p + div:is(.el-ul, .el-ol) > * {
     margin-block-start: var(--p-spacing-empty);
+  }
+
+  .markdown-rendered div > .el-ul > ul,
+  .markdown-rendered div > .el-ol > ol {
+    margin-block-start: calc(-1 * var(--p-spacing-empty) / 2);
   }
 
   // Tab title bar
@@ -306,6 +314,19 @@
   .inline-title {
     text-align: var(--inline-title-align);
   }
+  .inline-title:not([data-level]),
+  .markdown-rendered :is(h1, h2, h3, h4, h5, h6),
+  .HyperMD-header {
+    text-wrap: pretty;
+    letter-spacing: normal;
+  }
+  .markdown-source-view.is-live-preview .HyperMD-header {
+    padding-top: var(--heading-spacing) !important;
+
+    &:first-child {
+      padding-top: 0 !important;
+    }
+  }
 
   .markdown-rendered h1,
   .HyperMD-header-1,
@@ -342,13 +363,6 @@
   .HyperMD-list-line .cm-header-6 {
     text-transform: var(--h6-transform);
     text-align: var(--h6-align);
-  }
-
-  .inline-title:not([data-level]),
-  .markdown-rendered :is(h1, h2, h3, h4, h5, h6),
-  .HyperMD-header {
-    text-wrap: pretty;
-    letter-spacing: normal;
   }
 
   // Underline headings
