@@ -664,7 +664,7 @@ body.is-mobile.contrast-dark-black-mobile.theme-dark .vertical-tab-content {
   --colorist-c-dark: 0;
   --colorist-h-dark: calc(var(--accent-h) + 25);
 }
-.css-settings-manager.theme-light {
+.css-settings-manager.theme-light:where(.baseline-light, .cupertino-light, .material-light, .radiance-light, .softlight-light) {
   --color-base-00: oklch(
     pow(var(--colorist-l-00), var(--colorist-l-light)) min(0.1, calc(var(--colorist-c-00) * var(--colorist-c-light))) var(--colorist-h-light)
   );
@@ -707,7 +707,7 @@ body.is-mobile.contrast-dark-black-mobile.theme-dark .vertical-tab-content {
   --color-accent-1: oklch(0.7 max(0.15, calc(var(--colorist-c-light) * 0.1)) var(--colorist-h-light));
   --color-accent-2: oklch(0.75 max(0.15, calc(var(--colorist-c-light) * 0.1)) var(--colorist-h-light));
 }
-.css-settings-manager.theme-dark {
+.css-settings-manager.theme-dark:where(.baseline-dark, .cupertino-dark, .material-dark, .radiance-dark, .softlight-dark) {
   --color-base-00: oklch(
     pow(var(--colorist-l-00), calc(1 / var(--colorist-l-dark))) min(0.1, calc(var(--colorist-c-00) * var(--colorist-c-dark))) var(--colorist-h-dark)
   );
