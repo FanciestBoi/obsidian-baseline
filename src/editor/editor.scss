@@ -412,6 +412,10 @@
     color: var(--text-highlight, var(--text-normal));
   }
 
+  body.highlight-strong {
+    --highlight-opacity: 75%;
+  }
+
   body:not(.highlight-radius-off) {
     .markdown-rendered mark,
     .markdown-source-view mark {

@@ -2502,6 +2502,19 @@ settings:
 		level: 2
 		collapsed: true
 	-
+		id: highlight-style
+		title: Highlight style
+		type: class-select
+		allowEmpty: false
+		default: highlight-subtle
+		options:
+			-
+				label: Subtle
+				value: highlight-subtle
+			-
+				label: Strong
+				value: highlight-strong
+	-
 		id: highlight-radius-off
 		title: Disable rounded highlight
 		type: class-toggle
